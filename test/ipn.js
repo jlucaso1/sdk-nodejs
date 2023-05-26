@@ -6,7 +6,6 @@ var sinon = require('sinon');
 var ipnModule = require('../lib/resources/ipn');
 var preapprovalModule = require('../lib/resources/preapproval');
 var merchantOrdersModule = require('../lib/resources/merchantOrders');
-var Promise = require('bluebird');
 
 chai.use(chaiAsPromised);
 

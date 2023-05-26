@@ -3,7 +3,6 @@ var chai = require('chai');
 var sinon = require('sinon');
 var chaiAsPromised = require('chai-as-promised');
 var assert = chai.assert;
-var Promise = require('bluebird');
 var MercadopagoResponse = require('../lib/utils/mercadopagoResponse');
 var MercadopagoError = require('../lib/utils/mercadopagoError');
 var requestManager = require('../lib/request-manager');

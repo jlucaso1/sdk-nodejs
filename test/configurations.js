@@ -1,14 +1,12 @@
 /* eslint-env node, mocha */
 /* eslint-disable global-require */
 var chai = require('chai');
-var sinon = require('sinon');
 var chaiAsPromised = require('chai-as-promised');
 var assert = chai.assert;
 
 chai.use(chaiAsPromised);
 
 describe('Configurations Module', function () {
-  var Promise;
   var configuration;
   var clientId = 'CLIENT_ID';
   var clientSecret = 'CLIENT_SECRET';
@@ -17,14 +15,12 @@ describe('Configurations Module', function () {
 
   // Get an instance of configuration on require
   beforeEach(function () {
-    Promise = require('bluebird');
     configuration = require('../lib/configurations.js');
   });
 
   // Delete the require cache after each test (Prevent Singleton)
   afterEach(function () {
     delete require.cache[require.resolve('../lib/configurations.js')];
-    delete require.cache[require.resolve('bluebird')];
   });
 
   describe('Configure Errors', function () {

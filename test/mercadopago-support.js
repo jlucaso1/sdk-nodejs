@@ -2,7 +2,6 @@
 var chai = require('chai');
 var sinon = require('sinon');
 var chaiAsPromised = require('chai-as-promised');
-var Promise = require('bluebird');
 var assert = chai.assert;
 var mp = require('../index.js');
 var requestLib = require('request');

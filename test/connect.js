@@ -2,7 +2,6 @@ var chai = require('chai');
 var sinon = require('sinon');
 var assert = chai.assert;
 var chaiAsPromised = require('chai-as-promised');
-var Promise = require('bluebird');
 var connectModule = require('../lib/resources/connect');
 var requestManager = require('../lib/request-manager');
 var configurations = require('../lib/configurations');
